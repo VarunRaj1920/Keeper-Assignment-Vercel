@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reset default margins & paddings, set global font */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* A gentle gradient and center alignment */
+body {
+  /* Change these gradient colors if you want a different scheme */
+  background: linear-gradient(to right, #fffde7, #fdf6b2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Center content in a container with max-width for laptops/desktops */
+.main-container {
+  width: 100%;
+  max-width: 1200px; /* Adjust as needed for your design */
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+textarea {
+  min-height: 80px;
+  resize: none;
+}
+
+button {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
